@@ -1,0 +1,423 @@
+{
+	"tags": [
+		{
+			"name": "ГАСТРОНОМІЯ",
+			"products": [
+				{
+					"id": "qwe123qwe123",
+					"price": 140,
+					"weight": "90г",
+					"short": "Різні види сирів",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Formaggi"
+				},
+				{
+					"id": "/product2",
+					"price": 175,
+					"weight": "150г",
+					"short": "Сиро-в'ялені м'ясні вироби",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Salumi"
+				},
+				{
+					"id": "/product3",
+					"price": 90,
+					"weight": "100г",
+					"short": "Оливки",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Olive"
+				}
+			]
+		},
+		{
+			"name": "ЗАКУСКИ",
+			"products": [
+				{
+					"id": "/product4",
+					"price": 105,
+					"weight": "100г",
+					"short": "Брускетте (3 шт)",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Bruschette"
+				},
+				{
+					"id": "/product5",
+					"price": 195,
+					"weight": "150г",
+					"short": "Карпаччо ді вітелло (тонкі слайси промаринованої сирої яловичини. Пармезан, каперси, рукола, соус)",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Carpaccio di vitello"
+				},
+				{
+					"id": "/product6",
+					"price": 205,
+					"weight": "100г",
+					"short": "Карпаччо ді сальмоне (тонкі слайси промаринованого лосося, пармезан, каперси, рукола, лимон, соус)",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Carpaccio di salmone"
+				}
+			]
+		},
+		{
+			"name": "САЛАТИ",
+			"products": [
+				{
+					"id": "/product7",
+					"price": 200,
+					"weight": "240г",
+					"short": "Tальята (телятина обсмажена на сковороді з помодоріні, мікс салатів, сир пармезан, грецькі горіхи, соус)",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Tagliata"
+				},
+				{
+					"id": "/product8",
+					"price": 210,
+					"weight": "260г",
+					"short": "Поза-поза (королівські креветки обсмажені, мікс салату, помодоріні, порей, пармезан, кунжут, соус з оливкової олії, французької гірчиці та винного оцту)",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Posa-posa"
+				},
+				{
+					"id": "/product9",
+					"price": 205,
+					"weight": "280г",
+					"short": "Тутто (перець болгарський, мікс салатів, пармезан, перепелине яйце, стручкова квасоля, крутони, кунжут, соус на вершковій основі)",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Tutto"
+				}
+			]
+		},
+		{
+			"name": "Сашимі",
+			"products": [
+				{
+					"id": "/product10",
+					"price": 145,
+					"weight": "50г",
+					"short": "Креветки, за 50 г",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Prawns"
+				},
+				{
+					"id": "/product11",
+					"price": 135,
+					"weight": "50г",
+					"short": "Лосось, за 50 г",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Salmon"
+				},
+				{
+					"id": "/product12",
+					"price": 150,
+					"weight": "50г",
+					"short": "Вугор, за 50 г",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Eel"
+				}
+			]
+		},
+		{
+			"name": "Maki",
+			"products": [
+				{
+					"id": "/product13",
+					"price": 90,
+					"weight": "125г",
+					"short": "Maki огірок – авокадо (огірок, авокадо, рис, норі)",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Maki cucumber – avocado"
+				},
+				{
+					"id": "/product14",
+					"price": 105,
+					"weight": "125г",
+					"short": "Maki – креветка (креветка, рис, норі)",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Maki shrimp"
+				},
+				{
+					"id": "/product15",
+					"price": 115,
+					"weight": "135г",
+					"short": "Maki – вугор (вугор, рис, норі, соус, уногі, кунжут)",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Maki eel"
+				}
+			]
+		},
+		{
+			"name": "Філадельфія",
+			"products": [
+				{
+					"id": "/product16",
+					"price": 205,
+					"weight": "250г",
+					"short": "Філадельфія з огірком (рис, норі, лосось с/ с, крем-сир, огірок)",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Philadelphia with cucumber"
+				},
+				{
+					"id": "/product17",
+					"price": 210,
+					"weight": "250г",
+					"short": "Філадельфія з авокадо (рис, норі, лосось с/ с, крем-сир, авокадо)",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Philadelphia with avocado"
+				}
+			]
+		},
+		{
+			"name": "ПІЦЦА З САЛЬСОЮ",
+			"products": [
+				{
+					"id": "/product18",
+					"price": 140,
+					"weight": "200г",
+					"short": "170.00грн/ 40 см Маргеріта (моцарела, базилік, оливкова олія)",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Margherita"
+				},
+				{
+					"id": "/product19",
+					"price": 175,
+					"weight": "200г",
+					"short": "205.00грн/ 40 см Фантазія (моцарела, сосиски, картопля фрі)",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Fantasia"
+				},
+				{
+					"id": "/product20",
+					"price": 175,
+					"weight": "200г",
+					"short": "205.00грн/ 40 см Д’явола (моцарела, паприка. салямі, базилік, оливкова олія)",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Diavola"
+				}
+			]
+		},
+		{
+			"name": "ПІЦЦА З ВЕРШКАМИ",
+			"products": [
+				{
+					"id": "/product21",
+					"price": 205,
+					"weight": "200г",
+					"short": "255.00грн/ 40 см Куатро формаджі (чотири види італійського сиру, базилік, оливкова олія)",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Quattro formaggi"
+				},
+				{
+					"id": "/product22",
+					"price": 235,
+					"weight": "200г",
+					"short": "295.00грн/ 40 см Даніель (моцарела, креветки, лосось, базилік)",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Daniel"
+				},
+				{
+					"id": "/product23",
+					"price": 185,
+					"weight": "200г",
+					"short": "245.00грн/ 40 см Тонно чіпола (тунець, цибуля, моцарелла, оливкова олія)",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Tonno cipolla"
+				}
+			]
+		},
+		{
+			"name": "ПІЦЦА З СИРОМ",
+			"products": [
+				{
+					"id": "/product24",
+					"price": 220,
+					"weight": "200г",
+					"short": "275.00грн/ 40 см Мортаделла (моцарела, пармезан, мортаделла, шпинат, помодоріні)",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Mortadella"
+				},
+				{
+					"id": "/product25",
+					"price": 225,
+					"weight": "200г",
+					"short": "345.00грн/ 40 см Лучано (сир combozola, моцарелла, креветки, манго, пармезан, горіхи, м’ята)",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Luciano"
+				}
+			]
+		},
+		{
+			"name": "ПИВО",
+			"products": [
+				{
+					"id": "/product26",
+					"price": 89,
+					"weight": "0.5л",
+					"short": "Біле натуральне нефільтроване пиво верхнього бродіння, зварене по традиційному рецепту з несолодової пшениці, спеціальних дріжджів і особливих інгредієнтів.",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Hoegarden"
+				},
+				{
+					"id": "/product27",
+					"price": 87,
+					"weight": "0.5л",
+					"short": "Смак пива повний, вершковий, злегка солодкий, з тонами смаженого солоду, ідеальним балансом між легкою гіркотою і карамелевими відтінками.",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Leff Brune"
+				},
+				{
+					"id": "/product28",
+					"price": 87,
+					"weight": "0.5л",
+					"short": "Смак пива елегантний, гладкий, сухий, з помітними нотками фруктів і прянощів, нотками тостів і хмелю, ідеальним поєднанням міцності і вишуканості. У післясмаку відчуваються відтінки меду, апельсинової цедри, нюанси гвоздики.",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Leff Blonde"
+				}
+			]
+		},
+		{
+			"name": "АЛКОГОЛЬНІ КОКТЕЙЛІ",
+			"products": [
+				{
+					"id": "/product29",
+					"price": 130,
+					"weight": "250мл",
+					"short": "Секс на пляжі (горілка, гренадин, лікер дині, апельсиновий сік)",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Sex on the beach"
+				},
+				{
+					"id": "/product30",
+					"price": 130,
+					"weight": "200мл",
+					"short": "Піна Колада (ром, ананасовий сік, кокосовий лікер, вершки, збиті вершки)",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Pina Colada"
+				},
+				{
+					"id": "/product31",
+					"price": 150,
+					"weight": "250мл",
+					"short": "Мохіто (лайм, цукровий сироп, м’ята, ром, спрайт)",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Mojito"
+				}
+			]
+		},
+		{
+			"name": "ГАРЯЧІ КОКТЕЙЛІ",
+			"products": [
+				{
+					"id": "/product32",
+					"price": 125,
+					"weight": "250мл",
+					"short": "Гарячий апельсин (коньяк, апельсин, лимон, імбир, лікер амаретто, кориця, гвоздика, апельсиновий сік)",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Hot orrange"
+				},
+				{
+					"id": "/product33",
+					"price": 125,
+					"weight": "200мл",
+					"short": "Хмільна кава (подвійне еспресо, збите молоко, апельсиновий лікер, кавовий лікер, гвоздика, кориця, вершки, горіхи)",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Drunk coffee"
+				},
+				{
+					"id": "/product34",
+					"price": 135,
+					"weight": "250мл",
+					"short": "Глінтвейн (сухе біле або червоне вино, ром, яблуко, апельсин, кориця, гвоздика, мед)",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Mulled wine"
+				}
+			]
+		},
+		{
+			"name": "КАВА",
+			"products": [
+				{
+					"id": "/product35",
+					"price": 32,
+					"weight": "30мл",
+					"short": "Кава еспресо",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Caffe espresso"
+				},
+				{
+					"id": "/product36",
+					"price": 32,
+					"weight": "70мл",
+					"short": "Кава американо",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Caffe americano"
+				},
+				{
+					"id": "/product37",
+					"price": 46,
+					"weight": "250мл",
+					"short": "Капучино",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Cappuccino"
+				}
+			]
+		},
+		{
+			"name": "ЧАЙ",
+			"products": [
+				{
+					"id": "/product38",
+					"price": 55,
+					"weight": "500мл",
+					"short": "Зелений заварний (китайський зелений байховий листовий)",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Flying Dragon"
+				},
+				{
+					"id": "/product39",
+					"price": 55,
+					"weight": "500мл",
+					"short": "Зелений з фруктами (китайський зелений байховий листовий з фруктами)",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Flying Dragon Fruits"
+				},
+				{
+					"id": "/product40",
+					"price": 55,
+					"weight": "500мл",
+					"short": "Чорний заварний (цейлонський чорний байховий листовий)",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Golden Ceylon"
+				}
+			]
+		},
+		{
+			"name": "ВОДА, СОКИ",
+			"products": [
+				{
+					"id": "/product41",
+					"price": 120,
+					"weight": "1л",
+					"short": "Сік в асортименті 0,250мл - 30грн",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "Сік в асортименті"
+				},
+				{
+					"id": "/product42",
+					"price": 32,
+					"weight": "0.5л",
+					"short": "",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "7UP"
+				},
+				{
+					"id": "/product43",
+					"price": 33,
+					"weight": "0.5л",
+					"short": "",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Моршинська"
+				}
+			]
+		}
+	]
+}

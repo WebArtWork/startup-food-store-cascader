@@ -1,0 +1,9 @@
+{% for article in articles %}
+<a href="/article/{{{article.id}}}" class="article__item">
+	<h1>{{{article.name}}}</h1>
+	<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
+	<pre>
+		{{{article.short}}}
+	</pre>
+</a>
+{% endfor %}

@@ -1,0 +1,12 @@
+{% for product in top_products %}
+	<h1>{{{product.name}}}</h1>
+	<img src="{{{product.thumb}}}" alt="{{{product.name}}}">
+{% endfor %}
+{% for product in products %}
+	<h1>{{{product.name}}}</h1>
+	<img src="{{{product.thumb}}}" alt="{{{product.name}}}">
+{% endfor %}
+{% for article in articles %}
+	<h1>{{{article.name}}}</h1>
+	<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
+{% endfor %}

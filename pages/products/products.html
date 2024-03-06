@@ -1,0 +1,27 @@
+<section>
+	<!-- navigation section -->
+	{% for tag in tags %}
+	<a href="#{{{tag.id}}}">{{{tag.name}}}</a>
+	{% endfor %}
+</section>
+
+<section>
+	<!-- content section -->
+	{% for tag in tags %}
+	<h3 id="{{{tag.id}}}">{{{tag.name}}}</h3>
+	{% for product in tag.products %}
+	<h4>{{{product.name}}}</h4>
+	<img src="{{{product.thumb}}}" alt="{{{product.name}}}">
+	<div>
+		{{{product.description}}}
+	</div>
+	<span>{{{product.price}}} {{{currency}}}</span>
+	<span>{{{product.weight}}}</span>
+	{% endfor %}
+	{% endfor %}
+</section>
+
+<section>
+	<!-- info section -->
+	<span>WiFi: {{{variables.wifi}}}</span>
+</section>

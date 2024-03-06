@@ -1,0 +1,6 @@
+<h1>{{{article.name}}}</h1>
+<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
+<pre>{{{article.description|safe}}}</pre>
+{% if article.reference %}
+<a href="{{{article.reference}}}">{{{article.reference}}}</a>
+{% endif %}

@@ -1,0 +1,89 @@
+{
+	"title": "Welcome to waw Template",
+	"description": "description",
+	"keywords": "keywords",
+	"prefix": "/template",
+	"picture": "picture",
+	"author": "author",
+	"scss": "scss/index.scss",
+	"currency": "грн",
+	"variables": {
+		"primary_color": "#d3c9b7",
+		"secondary_color": "#f2f1ed",
+		"primary_text_color": "#000000",
+		"secondary_text_color": "#FFFFFF",
+		"wifi": "12345678"
+	},
+	"store": {
+		"name": "Store Name",
+		"description": "Store Description",
+		"thumb": "/template/img/avatar.png"
+	},
+	"footer": {
+		"products": [
+			{
+				"id": "/product",
+				"price": 1200,
+				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"name": "product"
+			},
+			{
+				"id": "/product",
+				"price": 1200,
+				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"name": "product"
+			},
+			{
+				"id": "/product",
+				"price": 1200,
+				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"name": "product"
+			}
+		],
+		"articles": [
+			{
+				"id": "/article",
+				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"name": "article"
+			},
+			{
+				"id": "/article",
+				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"name": "article"
+			},
+			{
+				"id": "/article",
+				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"name": "article"
+			}
+		],
+		"contents": [
+			{
+				"name": "NameTitle",
+				"thumb": "/angelina_nianchyr/img/4.webp",
+				"url": "Lorem ipsum ?"
+			},
+			{
+				"name": "NameTitle",
+				"thumb": "/angelina_nianchyr/img/8.webp",
+				"url": "Lorem ipsum ?"
+			},
+			{
+				"name": "NameTitle",
+				"thumb": "/angelina_nianchyr/img/7.webp",
+				"url": "Lorem ipsum ?"
+			},
+			{
+				"name": "NameTitle",
+				"thumb": "/angelina_nianchyr/img/5.webp",
+				"url": "Lorem ipsum ?"
+			}
+		]
+	}
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{{title}}}</title>
+	<meta itemprop="name" content="{{{title}}}">
+	<meta name="twitter:title" content="{{{title}}}">
+	<meta property="og:title" content="{{{title}}}" />
+
+	<meta name="description" content="{{{description}}}">
+	<meta itemprop="description" content="{{{description}}}">
+	<meta name="twitter:description" content="{{{description}}}">
+	<meta property="og:description" content="{{{description}}}" />
+
+	<meta itemprop="image" content="{{{image}}}">
+	<meta name="twitter:image:src" content="{{{image}}}">
+	<meta property="og:image" content="{{{image}}}" />
+
+	<base href="/">
+	<link
+		rel="icon"
+		type="image/x-icon"
+		href="{{{favicon || '/template/img/favicon.ico'}}}"
+	/>
+	<style>
+		:root {
+			--primary_color: {{{variables.primary_color || "#d3c9b7"}}};
+			--secondary_color: {{{variables.secondary_color || "#f2f1ed"}}};
+			--primary_text_color: {{{variables.primary_text_color || "#000000"}}};
+			--secondary_text_color: {{{variables.secondary_text_color || "#FFFFFF"}}};
+		}
+	</style>
+	<link rel="stylesheet" href="/template/css/index.css">
+</head>
+<body>
+	<header>
+		<img src="{{{store.thumb}}}" alt="">
+		<h1>{{{store.name}}}</h1>
+	</header>
+	<section>
+		<!-- do not remove next comment, there fits page content -->
+		<!-- HTML -->
+	</section>
+	<footer>
+		<div>
+			<!-- columns of sitemap -->
+			<div>
+				<a href="/products">Top products</a>
+				{% for product in footer.products %}
+				<a href="/product/{{{product.id}}}">{{{product.name}}}</a>
+				{% endfor %}
+			</div>
+			<div>
+				<a href="/articles">Top articles</a>
+				{% for article in footer.articles %}
+				<a href="/article/{{{article.id}}}">{{{article.name}}}</a>
+				{% endfor %}
+			</div>
+			<div>
+				<h5>Info</h5>
+				{% for content in footer.contents %}
+				<a href="{{{content.url}}}">{{{content.name}}}</a>
+				{% endfor %}
+			</div>
+		</div>
+		<div>&copy; 2024 {{{store.name}}}</div>
+	</footer>
+	<script src="/template/js/index.js"></script>
+</body>
+</html>

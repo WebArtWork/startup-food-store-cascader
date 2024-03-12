@@ -1,1 +1,25 @@
-<section></section>
+<section class="main">
+		{% for category in categories %}
+		{% if category.dishes and category.dishes | length %}
+		<div class="products-category">{{{category.catg_name}}}</div>
+		<div class="card-wrapper">
+			{% for dish in category.dishes %}
+			<div class="card" style="width: 18rem;">
+				<img src="{{{dish.dish_img}}}" class="card-img-top" alt="#">
+				<div class="card-body">
+					<div class="card-text">
+						<p class="card-text-name">{{{dish.dish_name}}}</p>
+						<p class="card-text-price">{{{dish.dish_price}}} {{{currency}}}</p>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		{% endif %}
+		{% endfor %}
+		<div class="anth_sections">
+			<p>Інші секції:</p>
+			<button type="button" class="btn btn-outline-light header-btns-btn2">Бар</button>
+			<button type="button" class="btn btn-outline-light header-btns-btn2">Сніданки</button>
+		</div>
+</section>

@@ -43,13 +43,13 @@
 		<section>
 			<header class="header">
 				<div class="header-f1">
-					<div class="header-logo">
-						<img class="header-logo-img" src="#" width="48px" height="48px"></img>
+					<a class="header-logo" href="#">
+						<img class="header-logo-img" src="template/img/favicon.ico" width="48px" height="48px"></img>
 						<div class="header-logo-name">
 							<p class="header-logo-name-p1">COOKIE</p>
 							<p class="header-logo-name-p2">Ресторан</p>
 						</div>
-					</div>
+					</a>
 					<div class="header-btns">
 						<button type="button" class="btn btn-outline-light header-btns-btn1"><i class="bi bi-search"></i>Пошук</button>
 						<button type="button" class="btn btn-outline-light header-btns-btn2"><i class="bi bi-person-circle"></i></button>
@@ -85,11 +85,18 @@
 					</div>
 				</div>
 				<div class="header-f4">
-					<ul class="nav nav-underline">
-						{% for categorie in categories %}
-						<li class="nav-item"><a class="nav-link">{{{categorie.name}}}</a></li>
-						{% endfor %}
-					</ul>
+					<div class="header-f4-scrollable">
+						<ul class="nav nav-underline">
+							{% for category in categories %}
+							<li class="nav-item"><a class="nav-link">{{{category.catg_name}}}</a></li>
+							{%if not loop.last %}
+							<div class="d-flex">
+								<div class="vr"></div>
+							  </div>
+							  {% endif %}
+							{% endfor %}
+						</ul>
+					</div>
 				</div>
 				<div class="vline"></div>
 				</div>
@@ -102,28 +109,55 @@
 		<!-- HTML -->
 	</section>
 	<footer>
-		<div>
-			<!-- columns of sitemap -->
-			<div>
-				<a href="/products">Top products</a>
-				{% for product in footer.products %}
-				<a href="/product/{{{product.id}}}">{{{product.name}}}</a>
-				{% endfor %}
-			</div>
-			<div>
-				<a href="/articles">Top articles</a>
-				{% for article in footer.articles %}
-				<a href="/article/{{{article.id}}}">{{{article.name}}}</a>
-				{% endfor %}
-			</div>
-			<div>
-				<h5>Info</h5>
-				{% for content in footer.contents %}
-				<a href="{{{content.url}}}">{{{content.name}}}</a>
-				{% endfor %}
+		<div class="vline"></div>
+		<div class="footer-main">
+			<div class="footer-main-container">
+				<div class="footer-main-p1">
+					<div class="contacts">
+						<p>Контактні дані</p>
+						<p>{{{footer.contacts.address}}}</p>
+					</div>
+					<div class="worktime">
+						<p>Робочий час</p>
+						<div class="worktime-schedule">
+							{% for worktime in footer.worktime %}
+							<div class="worktime-schedule-flex">
+								<p>{{{worktime.day}}}</p>
+								<p>{{{worktime.starttime}}} - {{{worktime.endtime}}}</p>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+				<div class="footer-main-p2">
+					<p>На карті</p>
+					<div class="footer-main-p2-map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1207.9587125659868!2d26.570781740817633!3d48.6753358738442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4733b873f87ab577%3A0x82ac3b42e4f75137!2z0JrQsNC80LXQvdC10YYt0J_QvtC00L7Qu9GM0YHQutC40LksINCl0LzQtdC70YzQvdC40YbQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1710237573338!5m2!1sru!2sua"
+							width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<button type="button" class="btn btn-outline-light header-btns-btn3">
+						<i class="bi bi-geo-alt"></i>
+						<p>Отримати розташування</p>
+					</button>
+				</div>
 			</div>
 		</div>
-		<div>&copy; 2024 {{{store.name}}}</div>
+		<div class="vline"></div>
+		<div class="credentials">
+			<div class="copyright">
+				<i class="bi bi-c-circle"></i>
+				<p>2024 COOKIE</p>
+			</div>
+			<div class="policies">
+				<a href="#">Політика використання файлів cookie</a>
+				<a href="#">Умови користування</a>
+				<a href="#">Політика конфіденційності</a>
+			</div>
+		</div>
+	
+	
 	</footer>
 	<script src="/template/js/index.js"></script>
 </body>

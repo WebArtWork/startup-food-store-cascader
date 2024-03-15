@@ -20,8 +20,11 @@ const move = (e) => {
   slider.scrollLeft = scrollLeft - scroll;
 }
 
-// Add the event listeners
 slider.addEventListener('mousemove', move, false);
 slider.addEventListener('mousedown', startDragging, false);
 slider.addEventListener('mouseup', stopDragging, false);
 slider.addEventListener('mouseleave', stopDragging, false)
+
+const elementHeight = document.querySelector('header').offsetHeight;
+console.log(elementHeight);
+document.documentElement.style.setProperty('--dynamic-height', `${elementHeight}px`);

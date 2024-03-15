@@ -51,18 +51,21 @@
 						</div>
 					</a>
 					<div class="header-btns">
-						<button type="button" class="btn btn-outline-light header-btns-btn1"><i class="bi bi-search"></i>Пошук</button>
-						<button type="button" class="btn btn-outline-light header-btns-btn2"><i class="bi bi-person-circle"></i></button>
-						<button type="button" class="btn btn-outline-light header-btns-btn3"><i class="bi bi-list"></i></button>
+						<button type="button" class="btn btn-outline-light header-btns-btn1"><i
+								class="bi bi-search"></i>Пошук</button>
+						<button type="button" class="btn btn-outline-light header-btns-btn2"><i
+								class="bi bi-person-circle"></i></button>
+						<button type="button" class="btn btn-outline-light header-btns-btn3"><i
+								class="bi bi-list"></i></button>
 					</div>
 				</div>
 				<div class="header-f2">
 					<ul class="nav nav-underline">
 						<li class="nav-item">
-							<a class="nav-link">Головна</a>
+							<a class="nav-link" href="/">Головна</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page">Меню</a>
+							<a class="nav-link" aria-current="page" href="/products">Меню</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link">Залишити відгук</a>
@@ -84,25 +87,10 @@
 						</ul>
 					</div>
 				</div>
-				<div class="header-f4">
-					<div class="header-f4-scrollable">
-						<ul class="nav nav-underline">
-							{% for category in categories %}
-							<li class="nav-item"><a class="nav-link">{{{category.catg_name}}}</a></li>
-							{%if not loop.last %}
-							<div class="d-flex">
-								<div class="vr"></div>
-							  </div>
-							  {% endif %}
-							{% endfor %}
-						</ul>
-					</div>
-				</div>
-				<div class="vline"></div>
 				</div>
 			</header>
 		</section>
-	
+
 	</header>
 	<section>
 		<!-- do not remove next comment, there fits page content -->
@@ -115,17 +103,39 @@
 				<div class="footer-main-p1">
 					<div class="contacts">
 						<p>Контактні дані</p>
-						<p>{{{footer.contacts.address}}}</p>
+						<p>Старе місто, Kam'yanets'-Podil's'kyi, Khmelnytskyi Oblast, Ukraine</p>
 					</div>
 					<div class="worktime">
 						<p>Робочий час</p>
 						<div class="worktime-schedule">
-							{% for worktime in footer.worktime %}
 							<div class="worktime-schedule-flex">
-								<p>{{{worktime.day}}}</p>
-								<p>{{{worktime.starttime}}} - {{{worktime.endtime}}}</p>
+								<p>Понеділок</p>
+								<p>08:00 - 23:00</p>
 							</div>
-							{% endfor %}
+							<div class="worktime-schedule-flex">
+								<p>Вівторок</p>
+								<p>08:00 - 23:00</p>
+							</div>
+							<div class="worktime-schedule-flex">
+								<p>Середа</p>
+								<p>08:00 - 23:00</p>
+							</div>
+							<div class="worktime-schedule-flex">
+								<p>Четвер</p>
+								<p>08:00 - 23:00</p>
+							</div>
+							<div class="worktime-schedule-flex">
+								<p>П'ятниця</p>
+								<p>08:00 - 23:00</p>
+							</div>
+							<div class="worktime-schedule-flex">
+								<p>Субота</p>
+								<p>08:00 - 23:00</p>
+							</div>
+							<div class="worktime-schedule-flex">
+								<p>Неділя</p>
+								<p>08:00 - 23:00</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -156,8 +166,8 @@
 				<a href="#">Політика конфіденційності</a>
 			</div>
 		</div>
-	
-	
+
+
 	</footer>
 	<script src="/template/js/index.js"></script>
 </body>

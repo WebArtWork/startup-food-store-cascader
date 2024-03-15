@@ -1,60 +1,76 @@
 {
 	"tags": [
 		{
-			"name": "ГАСТРОНОМІЯ",
+			"name": "Холодні закуски",
 			"products": [
 				{
-					"id": "qwe123qwe123",
-					"price": 140,
+					"id": "/product1",
+					"price": 135,
 					"weight": "90г",
-					"short": "Різні види сирів",
+					"short": "Мікс Маринованих грибів",
 					"thumb": "/template/img/menu-food/food-1.jpg",
-					"name": "Formaggi"
+					"name": "mushrooms"
 				},
 				{
 					"id": "/product2",
-					"price": 175,
+					"price": 160,
 					"weight": "150г",
-					"short": "Сиро-в'ялені м'ясні вироби",
+					"short": "Паштет у вигляді яблука",
 					"thumb": "/template/img/menu-food/food-2.jpg",
-					"name": "Salumi"
+					"name": "apple paste"
 				},
 				{
 					"id": "/product3",
-					"price": 90,
+					"price": 195,
 					"weight": "100г",
-					"short": "Оливки",
+					"short": "Маринована мокрель з соусом кім-чі",
 					"thumb": "/template/img/menu-food/food-3.jpg",
-					"name": "Olive"
+					"name": "Pickled mockerel"
+				},
+				{
+					"id": "/product4",
+					"price": 190,
+					"weight": "100г",
+					"short": "Тарілка маринованих овочів",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Pickled vegetables"
 				}
 			]
 		},
 		{
-			"name": "ЗАКУСКИ",
+			"name": "Десерти",
 			"products": [
 				{
-					"id": "/product4",
-					"price": 105,
-					"weight": "100г",
-					"short": "Брускетте (3 шт)",
-					"thumb": "/template/img/menu-food/food-1.jpg",
-					"name": "Bruschette"
-				},
-				{
 					"id": "/product5",
-					"price": 195,
-					"weight": "150г",
-					"short": "Карпаччо ді вітелло (тонкі слайси промаринованої сирої яловичини. Пармезан, каперси, рукола, соус)",
-					"thumb": "/template/img/menu-food/food-2.jpg",
-					"name": "Carpaccio di vitello"
+					"price": 160,
+					"weight": "100г",
+					"short": "Кокос",
+					"thumb": "/template/img/menu-food/food-1.jpg",
+					"name": "coconut"
 				},
 				{
 					"id": "/product6",
-					"price": 205,
+					"price": 195,
+					"weight": "150г",
+					"short": "Пивний мус з абрикосовим пюре",
+					"thumb": "/template/img/menu-food/food-2.jpg",
+					"name": "Beer mousse with apricot puree"
+				},
+				{
+					"id": "/product7",
+					"price": 165,
 					"weight": "100г",
-					"short": "Карпаччо ді сальмоне (тонкі слайси промаринованого лосося, пармезан, каперси, рукола, лимон, соус)",
+					"short": "Чизкейк",
 					"thumb": "/template/img/menu-food/food-3.jpg",
-					"name": "Carpaccio di salmone"
+					"name": "Cheesecake"
+				},
+				{
+					"id": "/product8",
+					"price": 150,
+					"weight": "100г",
+					"short": "Снікерс",
+					"thumb": "/template/img/menu-food/food-3.jpg",
+					"name": "Snickers"
 				}
 			]
 		},

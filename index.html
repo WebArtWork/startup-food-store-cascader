@@ -21,8 +21,9 @@
 	<link
 		rel="icon"
 		type="image/x-icon"
-		href="{{{favicon || '/template/img/favicon.ico'}}}"
+		href="{{{favicon || '/cascader/img/favicon.ico'}}}"
 	/>
+	
 	<style>
 		:root {
 			--primary_color: {{{variables.primary_color || "#d3c9b7"}}};
@@ -31,41 +32,143 @@
 			--secondary_text_color: {{{variables.secondary_text_color || "#FFFFFF"}}};
 		}
 	</style>
-	<link rel="stylesheet" href="/template/css/index.css">
+	<link rel="stylesheet" href="/cascader/css/index.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	
+	
 </head>
 <body>
 	<header>
-		<img src="{{{store.thumb}}}" alt="">
-		<h1>{{{store.name}}}</h1>
+		<section>
+			<header class="header">
+				<div class="header-f1">
+					<a class="header-logo" href="#">
+						<img class="header-logo-img" src="cascader/img/favicon.ico" width="48px" height="48px"></img>
+						<div class="header-logo-name">
+							<p class="header-logo-name-p1">COOKIE</p>
+							<p class="header-logo-name-p2">Ресторан</p>
+						</div>
+					</a>
+					<div class="header-btns">
+						<button type="button" class="btn btn-outline-light header-btns-btn1"><i
+								class="bi bi-search"></i>Пошук</button>
+						<button type="button" class="btn btn-outline-light header-btns-btn2"><i
+								class="bi bi-person-circle"></i></button>
+						<button type="button" class="btn btn-outline-light header-btns-btn3"><i
+								class="bi bi-list"></i></button>
+					</div>
+				</div>
+				<div class="header-f2">
+					<ul class="nav nav-underline">
+						<li class="nav-item">
+							<a class="nav-link" href="/">Головна</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="/products">Меню</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Залишити відгук</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header-f3-wrapper">
+					<div class="header-f3">
+						<ul class="nav nav-underline">
+							<li class="nav-item">
+								<a class="nav-link">Кухня</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page">Бар</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link">Сніданки</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</header>
+		</section>
+
 	</header>
 	<section>
 		<!-- do not remove next comment, there fits page content -->
 		<!-- HTML -->
 	</section>
 	<footer>
-		<div>
-			<!-- columns of sitemap -->
-			<div>
-				<a href="/products">Top products</a>
-				{% for product in footer.products %}
-				<a href="/product/{{{product.id}}}">{{{product.name}}}</a>
-				{% endfor %}
-			</div>
-			<div>
-				<a href="/articles">Top articles</a>
-				{% for article in footer.articles %}
-				<a href="/article/{{{article.id}}}">{{{article.name}}}</a>
-				{% endfor %}
-			</div>
-			<div>
-				<h5>Info</h5>
-				{% for content in footer.contents %}
-				<a href="{{{content.url}}}">{{{content.name}}}</a>
-				{% endfor %}
+		<div class="vline"></div>
+		<div class="footer-main">
+			<div class="footer-main-container">
+				<div class="footer-main-p1">
+					<div class="contacts">
+						<p>Контактні дані</p>
+						<p>Старе місто, Kam'yanets'-Podil's'kyi, Khmelnytskyi Oblast, Ukraine</p>
+					</div>
+					<div class="worktime">
+						<p>Робочий час</p>
+						<div class="worktime-schedule">
+							<div class="worktime-schedule-flex">
+								<p>Понеділок</p>
+								<p>08:00 - 23:00</p>
+							</div>
+							<div class="worktime-schedule-flex">
+								<p>Вівторок</p>
+								<p>08:00 - 23:00</p>
+							</div>
+							<div class="worktime-schedule-flex">
+								<p>Середа</p>
+								<p>08:00 - 23:00</p>
+							</div>
+							<div class="worktime-schedule-flex">
+								<p>Четвер</p>
+								<p>08:00 - 23:00</p>
+							</div>
+							<div class="worktime-schedule-flex">
+								<p>П'ятниця</p>
+								<p>08:00 - 23:00</p>
+							</div>
+							<div class="worktime-schedule-flex">
+								<p>Субота</p>
+								<p>08:00 - 23:00</p>
+							</div>
+							<div class="worktime-schedule-flex">
+								<p>Неділя</p>
+								<p>08:00 - 23:00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-main-p2">
+					<p>На карті</p>
+					<div class="footer-main-p2-map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1207.9587125659868!2d26.570781740817633!3d48.6753358738442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4733b873f87ab577%3A0x82ac3b42e4f75137!2z0JrQsNC80LXQvdC10YYt0J_QvtC00L7Qu9GM0YHQutC40LksINCl0LzQtdC70YzQvdC40YbQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1710237573338!5m2!1sru!2sua"
+							width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<button type="button" class="btn btn-outline-light header-btns-btn3">
+						<i class="bi bi-geo-alt"></i>
+						Отримати розташування
+					</button>
+				</div>
 			</div>
 		</div>
-		<div>&copy; 2024 {{{store.name}}}</div>
+		<div class="vline"></div>
+		<div class="credentials">
+			<div class="copyright">
+				<i class="bi bi-c-circle"></i>
+				<p>2024 COOKIE</p>
+			</div>
+			<div class="policies">
+				<a href="#">Політика використання файлів cookie</a>
+				<a href="#">Умови користування</a>
+				<a href="#">Політика конфіденційності</a>
+			</div>
+		</div>
+
+
 	</footer>
-	<script src="/template/js/index.js"></script>
+	<script src="/cascader/js/index.js"></script>
 </body>
 </html>

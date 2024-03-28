@@ -1,0 +1,35 @@
+.main {
+    position: relative;
+    width: 80%;	
+    margin-left: auto;
+    margin-right: auto;
+}
+.products-category {
+    color: white;
+    font-size: 32px;
+}
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    .card {
+        margin: 10px;
+        --bs-card-border-color: #222222;
+        background-color: #222222;
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            .card-text-price {
+                color: #ff9f2f;
+            }
+        }
+        :nth-child(2) {
+            display: flex;
+        }
+    }
+}
+.anth_sections {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}

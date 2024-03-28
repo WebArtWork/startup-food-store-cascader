@@ -2,7 +2,7 @@
   "title": "Welcome to waw Template",
   "description": "description",
   "keywords": "keywords",
-  "prefix": "/template",
+  "prefix": "/cascader",
   "picture": "picture",
   "author": "author",
   "scss": "scss/index.scss",
@@ -17,7 +17,7 @@
   "store": {
     "name": "Store Name",
     "description": "Store Description",
-    "thumb": "/template/img/avatar.png"
+    "thumb": "/cascader/img/avatar.png"
   },
   "footer": {
     "products": [
@@ -25,21 +25,21 @@
         "id": "/product",
         "price": 1200,
         "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "thumb": "https://neryxomka.com/cascader/img/welcome.png",
         "name": "product"
       },
       {
         "id": "/product",
         "price": 1200,
         "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "thumb": "https://neryxomka.com/cascader/img/welcome.png",
         "name": "product"
       },
       {
         "id": "/product",
         "price": 1200,
         "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "thumb": "https://neryxomka.com/cascader/img/welcome.png",
         "name": "product"
       }
     ],
@@ -47,19 +47,19 @@
       {
         "id": "/article",
         "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "thumb": "https://neryxomka.com/cascader/img/welcome.png",
         "name": "article"
       },
       {
         "id": "/article",
         "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "thumb": "https://neryxomka.com/cascader/img/welcome.png",
         "name": "article"
       },
       {
         "id": "/article",
         "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "thumb": "https://neryxomka.com/cascader/img/welcome.png",
         "name": "article"
       }
     ]

@@ -1,12 +1,57 @@
-{% for product in top_products %}
-	<h1>{{{product.name}}}</h1>
-	<img src="{{{product.thumb}}}" alt="{{{product.name}}}">
-{% endfor %}
-{% for product in products %}
-	<h1>{{{product.name}}}</h1>
-	<img src="{{{product.thumb}}}" alt="{{{product.name}}}">
-{% endfor %}
-{% for article in articles %}
-	<h1>{{{article.name}}}</h1>
-	<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
-{% endfor %}
+<div class="main container">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="main-title">Кращі страви цього місяця!</div>
+			<div class="main-index-cards index-cards cards">
+				{% for product in top_products %}
+				<div class=" index-card card" style="width: 18rem;">
+					<img src="{{{ product.thumb }}}" class="card-img-top" alt="{{{ product.name }}}">
+					<div class="index-card-body card-body">
+						<div class="index-card-text card-text">
+							<p class="index-card-text-name card-text-name">{{{ product.short }}}</p>
+							<p class="index-card-text-price card-text-price">{{{ product.price }}} {{{ currency }}}</p>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="vline"></div>
+<div class="special-for-you">
+	<div class="main container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="special-for-you-wrapper">
+					<div class="special-for-you-text">
+						<div class="special-for-you-title">Пропозиція тиждня!</div>
+						<div class="special-for-you-description">Lorem ipsum dolor sit amet consectetur adipisicing
+							elit.
+							Accusantium sit aliquam voluptate nesciunt at voluptates, magni deserunt amet aperiam dicta
+							commodi ab tempora nulla natus labore. Deserunt molestias blanditiis reprehenderit!
+							Ipsam, optio dolore repellendus iure illum reprehenderit aliquid eius eum, maxime non veniam
+							ducimus similique est error laboriosam veritatis illo amet nobis sint nam inventore
+							obcaecati
+							necessitatibus.</div>
+					</div>
+					<div id="special-offer-cards" class="index-cards cards">
+						<div id="special-offer-card" class="index-card card" style="width: 18rem;">
+							<img src="{{{ top_products[0].thumb }}}" class="card-img-top" alt="{{{ product.name }}}">
+							<div class="index-card-body card-body">
+								<div class="index-card-text card-text">
+									<p class="index-card-text-name card-text-name">{{{ top_products[0].short }}}</p>
+									<div class="price-discount">
+										<p class="index-card-text-price card-text-price">{{{ top_products[0].price }}}
+											{{{currency }}}</p>
+										<p class="text-canceled">1699 {{{currency }}}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>

@@ -1,4 +1,6 @@
 // Global styles
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 @import "scss/utils/normalize";
 @import "scss/utils/fonts";
 @import "scss/utils/vars";
@@ -6,3 +8,10 @@
 @import "scss/base";
 // pages
 @import "scss/pages/template";
+@import "scss/pages/_header";
+@import "scss/pages/_products";
+@import "scss/pages/_footer";
+@import "scss/pages/_index";
+
+
+

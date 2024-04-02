@@ -8,21 +8,21 @@ header {
     width: 100%;
     top: 0;
     z-index:1;
-    background-color: #111111;
+    background-color: var(--bg_color);
 }
 .header {
     .nav {
-        --bs-nav-link-color: white;
-        --bs-nav-link-hover-color: #ff9f2f !important;
+        --bs-nav-link-color: var(--primary_text_color);
+        --bs-nav-link-hover-color: var(--secondary_color) !important;
     }
 }
 .nav {
-    --bs-nav-link-color: white;
-    --bs-nav-link-hover-color: white;
+    --bs-nav-link-color: var(--primary_text_color);
+    --bs-nav-link-hover-color: var(--primary_text_color);
 }
 .nav-underline .nav-link.active {
-    --bs-nav-underline-link-active-color: white;
-    color: #ff9f2f;
+    --bs-nav-underline-link-active-color: var(--primary_text_color);
+    color: var(secondary_color);
 }
 .header-f4 {
     .nav-underline .nav-link {
@@ -32,11 +32,11 @@ header {
 }
 
 body {
-    background-color: #111111 !important;
+    background-color: var(--bg_color) !important;
     height: auto;
 }
 p {
-    color: white;
+    color: var(--primary_text_color);
 }
 .header-f1, .header-f2, .header-f3, .header-f4 {
     position: relative;
@@ -71,7 +71,7 @@ p {
     display: flex;
     button {
         margin: 5px;
-        background-color: #111111;
+        background-color: var(--bg_color);
     }
 }
 .header-btns-btn1 {
@@ -85,9 +85,9 @@ p {
     margin-top: 15px;
 }
 .header-f3-wrapper {
-    background-color: #ff9f2f;
+    background-color: var(--secondary_color);
     .header-f3 a{
-        --bs-nav-link-hover-color: white;
+        --bs-nav-link-hover-color: var(--primary_text_color);
     }
 }
 
@@ -96,7 +96,7 @@ p {
     top: var(--dynamic-height);
     z-index: 2;
     position: sticky;
-    background-color: #111111;
+    background-color: var(--bg_color);
    
     cursor: grab;
     :active {
@@ -116,11 +116,11 @@ p {
     overflow-x: auto;
     overflow: hidden;
     a {
-        color: white;
+        color: var(--primary_text_color);
 
     }
     a:hover {
-        color: #ff9f2f;
+        color: var(--secondary_color);
     }
 }
 .header-f4::before {
@@ -146,7 +146,7 @@ p {
 .vline {
     width: 100%;
     height: 1px;
-    background-color: #ff9f2f;
+    background-color: var(--secondary_color);
 }
 
 .header .nav-item:hover {
@@ -156,7 +156,7 @@ p {
 .vr {
     margin-top: auto;
     margin-bottom: auto;
-    color: white;
+    color: var(--primary_text_color);
     height: 10px;
 }
 

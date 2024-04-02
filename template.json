@@ -8,6 +8,7 @@
   "scss": "scss/index.scss",
   "currency": "UAH",
   "variables": {
+    "bg_color": "#111111",
     "primary_color": "#d3c9b7",
     "secondary_color": "#ff9f2f",
     "primary_text_color": "#FFFFFF",

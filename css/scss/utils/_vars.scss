@@ -25,6 +25,7 @@ $black: #000;
 $dark: #000;
 
 /* variables */
+$bg_color: if(variable-exists(--bg_color), var(--bg_color), '#111111');
 $primary_color: if(variable-exists(--primary_color), var(--primary_color), '#d3c9b7');
 $secondary_color: if(variable-exists(--secondary_color), var(--secondary_color), '#ff9f2f');
 $primary_text_color: if(variable-exists(--primary_text_color), var(--primary_text_color), '#FFFFFF');

@@ -29,14 +29,7 @@
 				<div class="special-for-you-wrapper">
 					<div class="special-for-you-text">
 						<div class="special-for-you-title">Пропозиція тиждня!</div>
-						<div class="special-for-you-description">Lorem ipsum dolor sit amet consectetur adipisicing
-							elit.
-							Accusantium sit aliquam voluptate nesciunt at voluptates, magni deserunt amet aperiam dicta
-							commodi ab tempora nulla natus labore. Deserunt molestias blanditiis reprehenderit!
-							Ipsam, optio dolore repellendus iure illum reprehenderit aliquid eius eum, maxime non veniam
-							ducimus similique est error laboriosam veritatis illo amet nobis sint nam inventore
-							obcaecati
-							necessitatibus.</div>
+						<div class="special-for-you-description">{{{top_products[0].short}}}</div>
 						<div class="special-for-you-buttons">
 							<button class="btn btn-outline-light header-btns-btn2">Замовити</button>
 							<button class="btn btn-outline-light header-btns-btn2"> Залишити відгук</button>
@@ -51,7 +44,7 @@
 									<div class="price-discount">
 										<p class="index-card-text-price card-text-price">{{{ top_products[0].price }}}
 											{{{currency }}}</p>
-										<p class="text-canceled">1699 {{{currency }}}</p>
+										<p class="text-canceled">{{{ top_products[0].price + 199}}} {{{currency }}}</p>
 									</div>
 								</div>
 							</div>
@@ -66,56 +59,29 @@
 <div class="container review-section">
 	<div class="review-section-title">Наші відгуки</div>
 	<div class="reviews">
+		{% for review in reviews %}
 		<div class="review-card">
 			<div class="review-card-title">
-				<div class="review-card-title-pfp"><i class="bi bi-person-circle"></i></div>
-				<div class="review-card-title-name">Lorem ipsum</div>
+				<div class="review-card-title-pfp">
+					{% if review.img !== "#" %}
+					<img src="{{{review.img}}}" alt="" height="30px">
+					{% else %}
+					<i class="bi bi-person-circle"></i>
+					{% endif %}
+				</div>
+				<div class="review-card-title-name">{{{review.name}}}</div>
 			</div>
-			<div class="review-card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut officia
-				voluptatum distinctio illum ipsa laboriosam, impedit voluptas excepturi cum, repellendus veritatis fugit
-				cumque quis maiores vel saepe, possimus perspiciatis id!</div>
+			<div class="review-card-text">{{{review.text}}}</div>
 			<div class="review-card-rating">
 				<p>Rating: </p>
-				<i class="bi bi-star-fill"></i>
-				<i class="bi bi-star-fill"></i>
-				<i class="bi bi-star-fill"></i>
-				<i class="bi bi-star-fill"></i>
-				<i class="bi bi-star"></i>
+					{% for i in Array.from(Array(review.rating)) %}
+						<i class="bi bi-star-fill"></i>
+					{% endfor %}
+					{% for i in Array.from(Array(5 - review.rating)) %}
+						<i class="bi bi-star"></i>
+					{% endfor %}
 			</div>
 		</div>
-		<div class="review-card">
-			<div class="review-card-title">
-				<div class="review-card-title-pfp"><i class="bi bi-person-circle"></i></div>
-				<div class="review-card-title-name">Lorem ipsum</div>
-			</div>
-			<div class="review-card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut officia
-				voluptatum distinctio illum ipsa laboriosam, impedit voluptas excepturi cum, repellendus veritatis fugit
-				cumque quis maiores vel saepe, possimus perspiciatis id!</div>
-			<div class="review-card-rating">
-				<p>Rating: </p>
-				<i class="bi bi-star-fill"></i>
-				<i class="bi bi-star-fill"></i>
-				<i class="bi bi-star-fill"></i>
-				<i class="bi bi-star-fill"></i>
-				<i class="bi bi-star"></i>
-			</div>
-		</div>
-		<div class="review-card">
-			<div class="review-card-title">
-				<div class="review-card-title-pfp"><i class="bi bi-person-circle"></i></div>
-				<div class="review-card-title-name">Lorem ipsum</div>
-			</div>
-			<div class="review-card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut officia
-				voluptatum distinctio illum ipsa laboriosam, impedit voluptas exceptur cum, repellendus veritatis fugit
-				cumque quis maiores vel saepe, possimus perspiciatis id!</div>
-			<div class="review-card-rating">
-				<p>Rating: </p>
-				<i class="bi bi-star-fill"></i>
-				<i class="bi bi-star-fill"></i>
-				<i class="bi bi-star-fill"></i>
-				<i class="bi bi-star-fill"></i>
-				<i class="bi bi-star"></i>
-			</div>
-		</div>
+		{% endfor %}
 	</div>
 </div>

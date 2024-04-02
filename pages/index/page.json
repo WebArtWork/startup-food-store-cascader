@@ -68,5 +68,28 @@
 			"thumb": "https://neryxomka.com/cascader/img/welcome.png",
 			"name": "article"
 		}
+	],
+	"reviews": [
+		{
+			"id": "/review",
+			"img": "#",
+			"name": "Lorem ipsum",
+			"text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut officiavoluptatum distinctio illum ipsa laboriosam, impedit voluptas excepturi cum, repellendus veritatis fugit cumque quis maiores vel saepe, possimus perspiciatis id!",
+			"rating": 3
+		},
+		{
+			"id": "/review",
+			"img": "#",
+			"name": "Lorem ipsum",
+			"text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut officiavoluptatum distinctio illum ipsa laboriosam, impedit voluptas excepturi cum, repellendus veritatis fugit cumque quis maiores vel saepe, possimus perspiciatis id!",
+			"rating": 4
+		},
+		{
+			"id": "/review",
+			"img": "#",
+			"name": "Lorem ipsum",
+			"text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut officiavoluptatum distinctio illum ipsa laboriosam, impedit voluptas excepturi cum, repellendus veritatis fugit cumque quis maiores vel saepe, possimus perspiciatis id!",
+			"rating": 5
+		}
 	]
 }

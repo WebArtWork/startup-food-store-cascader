@@ -8,6 +8,10 @@
   "scss": "scss/index.scss",
   "currency": "UAH",
   "variables": {
+    "fs_large": "32px",
+    "fs_medium": "24px",
+    "fs_small": "16px",
+    "fs_title": "50px",
     "bg_color": "#111111",
     "primary_color": "#d3c9b7",
     "secondary_color": "#ff9f2f",
@@ -19,6 +23,7 @@
     "index_page_primary_bg_color": "#353535",
     "index_page_secondary_bg_color": "#353535",
     "review_card_bg_color": "#222222",
+    "policies_text_color": "#444444",
     "contacts": "Старе місто, Kam'yanets'-Podil's'kyi, Khmelnytskyi Oblast, Ukraine",
     "worktime": [
       {

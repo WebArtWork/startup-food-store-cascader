@@ -5,8 +5,8 @@
     margin-right: auto;
 }
 .products-category {
-    color: white;
-    font-size: 32px;
+    color: var(--primary_text_color);
+    font-size: var(--fs_large);
 }
 .card-wrapper {
     display: flex;
@@ -15,13 +15,13 @@
     justify-content: stretch;
     .card {
         margin: 10px;
-        --bs-card-border-color: #222222;
-        background-color: #222222;
+        --bs-card-border-color: var(--review_card_bg_color);
+        background-color: var(--review_card_bg_color);
         .card-body {
             display: flex;
             flex-direction: column;
             .card-text-price {
-                color: #ff9f2f;
+                color: var(--secondary_color);
             }
         }
         :nth-child(2) {

@@ -59,10 +59,10 @@ p {
 .header-logo-name-p1 {
     line-height: 26px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 26px;
+    font-size: var(--fs_medium);
 }
 .header-logo-name-p2 {
-    font-size: 12px;
+    font-size: var(--fs_small);
 }
 .header-logo p {
     margin: 0px;
@@ -107,7 +107,7 @@ p {
         text-wrap: nowrap;
     }
     .nav-item a {
-        font-size: 12px;
+        font-size: var(--fs_small);
         flex-wrap: nowrap;
     }
 }

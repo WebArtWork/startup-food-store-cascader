@@ -34,7 +34,7 @@
         justify-content: space-between;
     }
     p {
-        color: white;
+        color: var(--primary_text_color);
         margin: 0;
     }
 }
@@ -44,9 +44,9 @@
 }
 .copyright {
     margin: 15px;
-    color: white;
+    color: var(--primary_text_color);
     i, p {
-        font-size: 12px;
+        font-size: var(--fs_small);
         display: inline;
         padding: 2px;
     }
@@ -55,10 +55,10 @@
     margin: 15px;
     a {
         text-decoration: none;
-        color: #444444;
+        color: var(--policies_text_color);
         display: inline;
         margin: 15px;
-        font-size: 12px;
+        font-size: var(--fs_small);
         font-style: normal;
         
     }

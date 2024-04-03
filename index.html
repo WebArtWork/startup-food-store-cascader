@@ -26,6 +26,12 @@
 	
 	<style>
 		:root {
+			/* FONT SIZE */
+			--fs_title: {{{variables.fs_title || "50px"}}};
+			--fs_small: {{{variables.fs_small || "16px"}}};
+			--fs_medium: {{{variables.fs_medium || "24px"}}};
+			--fs_large: {{{variables.fs_large || "32px"}}};
+			/* COLORS */
 			--bg_color: {{{variables.bg_color || "#111111"}}};
 			--primary_color: {{{variables.primary_color || "#d3c9b7"}}};
 			--secondary_color: {{{variables.secondary_color || "#ff9f2f"}}};
@@ -36,8 +42,7 @@
 			--foodcard_hover_color: {{{variables.foodcard_hover_color || "#6e6e6e"}}};
 			--discount_foodcard_canceled_text_color: {{{variables.discount_foodcard_canceled_text_color || "#222222"}}};
 			--review_card_bg_color: {{{variables.review_card_bg_color || "#222222"}}};
-
-
+			--policies_text_color: {{{variables.policies_text_color || "#444444"}}};
 		}
 	</style>
 	<link rel="stylesheet" href="/cascader/css/index.css">

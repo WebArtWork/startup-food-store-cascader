@@ -8,6 +8,11 @@ $ff-second: 'Roboto',
 sans-serif;
 
 /* font-size */
+$fs_title: 50px;
+$fs_small: 16px;
+$fs_medium: 24px;
+$fs_large: 32px;
+
 $fs: 16px;
 
 
@@ -35,4 +40,6 @@ $foodcard_bg_color:  if(variable-exists(--foodcard_bg_color), var(--foodcard_bg_
 $foodcard_hover_color:  if(variable-exists(--foodcard_hover_color), var(--foodcard_hover_color), '#6e6e6e');
 $discount_foodcard_canceled_text_color:  if(variable-exists(--discount_foodcard_canceled_text_color), var(--foodcard_hover_color), '#5f5f5f');
 $review_card_bg_color: if(variable-exists(--review_card_bg_color), var(--review_card_bg_color), '#222222');
+$policies_text_color: if(variable-exists(--policies_text_color), var(--policies_text_color), '#444444');
+
 

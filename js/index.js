@@ -1,7 +1,3 @@
-let mouseDown = false;
-let startX, scrollLeft;
-const slider = document.querySelector('.header-f4-scrollable');
-
 const elementHeight = document.querySelector('header').offsetHeight;
 document.documentElement.style.setProperty('--dynamic-height', `${elementHeight}px`);
 
@@ -18,7 +14,10 @@ document.querySelectorAll('.nav-item').forEach(tab => {
 });
 
 
-const startDragging = (e) => {
+let mouseDown = false;
+let startX, scrollLeft;
+
+function startDragging(e, slider) {
   if (e.type === 'touchstart') {
     startX = e.touches[0].pageX - slider.offsetLeft;
   } else {
@@ -28,11 +27,11 @@ const startDragging = (e) => {
   scrollLeft = slider.scrollLeft;
 }
 
-const stopDragging = () => {
+function stopDragging() {
   mouseDown = false;
 }
 
-const move = (e) => {
+function move(e, slider) {
   e.preventDefault();
   if (!mouseDown) { return; }
   let x;
@@ -45,11 +44,16 @@ const move = (e) => {
   slider.scrollLeft = scrollLeft - scroll;
 }
 
-slider.addEventListener('mousemove', move, false);
-slider.addEventListener('mousedown', startDragging, false);
-slider.addEventListener('mouseup', stopDragging, false);
-slider.addEventListener('mouseleave', stopDragging, false);
+function initializeSlider(slider) {
+  slider.addEventListener('mousemove', e => move(e, slider), false);
+  slider.addEventListener('mousedown', e => startDragging(e, slider), false);
+  slider.addEventListener('mouseup', stopDragging, false);
+  slider.addEventListener('mouseleave', stopDragging, false);
+  slider.addEventListener('touchmove', e => move(e, slider), false);
+  slider.addEventListener('touchstart', e => startDragging(e, slider), false);
+  slider.addEventListener('touchend', stopDragging, false);
+}
 
-slider.addEventListener('touchmove', move, false);
-slider.addEventListener('touchstart', startDragging, false);
-slider.addEventListener('touchend', stopDragging, false);
+document.querySelectorAll('.reviews').forEach(initializeSlider); 
+document.querySelectorAll('.header-f4-scrollable').forEach(initializeSlider);
+

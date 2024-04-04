@@ -58,30 +58,32 @@
 <div class="vline"></div>
 <div class="container review-section">
 	<div class="review-section-title">Наші відгуки</div>
-	<div class="reviews">
-		{% for review in reviews %}
-		<div class="review-card">
-			<div class="review-card-title">
-				<div class="review-card-title-pfp">
-					{% if review.img !== "#" %}
-					<img src="{{{review.img}}}" alt="" height="30px">
-					{% else %}
-					<i class="bi bi-person-circle"></i>
-					{% endif %}
+	<div class="reviews-scrollable">
+		<div class="reviews">
+			{% for review in reviews %}
+			<div class="review-card">
+				<div class="review-card-title">
+					<div class="review-card-title-pfp">
+						{% if review.img !== "#" %}
+						<img src="{{{review.img}}}" alt="" height="30px">
+						{% else %}
+						<i class="bi bi-person-circle"></i>
+						{% endif %}
+					</div>
+					<div class="review-card-title-name">{{{review.name}}}</div>
 				</div>
-				<div class="review-card-title-name">{{{review.name}}}</div>
-			</div>
-			<div class="review-card-text">{{{review.text}}}</div>
-			<div class="review-card-rating">
-				<p>Rating: </p>
+				<div class="review-card-text">{{{review.text}}}</div>
+				<div class="review-card-rating">
+					<p>Rating: </p>
 					{% for i in Array.from(Array(review.rating)) %}
-						<i class="bi bi-star-fill"></i>
+					<i class="bi bi-star-fill"></i>
 					{% endfor %}
 					{% for i in Array.from(Array(5 - review.rating)) %}
-						<i class="bi bi-star"></i>
+					<i class="bi bi-star"></i>
 					{% endfor %}
+				</div>
 			</div>
+			{% endfor %}
 		</div>
-		{% endfor %}
 	</div>
 </div>

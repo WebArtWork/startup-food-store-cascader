@@ -115,12 +115,33 @@
     }
 }
 
+.reviews-scrollable {
+    white-space: nowrap;
+    position: relative;
+    cursor: grab;
+    :active {
+        cursor: grabbing;
+    }
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow: hidden;
+}
+
 .reviews {
     display: flex;
     justify-content: space-around;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow: hidden;
+}
+
+.reviews::-webkit-scrollbar {
+    display: none;
 }
 
 .review-card {
+    min-width: 260px;
     margin: 15px;
     background-color: var(--review_card_bg_color);
     color: var(--primary_text_color);

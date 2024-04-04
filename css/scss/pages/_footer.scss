@@ -1,17 +1,24 @@
-.footer-main, .credentials {
-    position: relative;
-    width: 70%;
-    margin: auto;
-}
+
 .footer-main-container {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    
+}
+@media only screen and (max-width: 770px) {
+    .footer-main-container {
+        flex-direction: column;
+    }
+    .footer-main-p1 {
+        margin-bottom: 25px;
+    }
 }
 .footer-main-p1 {
     display: flex;
     flex-direction: column;
+    margin-right: 25px;
 }
 .worktime {
     margin-top: 30px;
@@ -25,6 +32,12 @@
         margin: 0px;
         display: inline;
     }
+    .footer-main-p2-map {
+        width: 100%;
+        iframe {
+            width: 100%;
+        }
+    }
 }
 
 .worktime-schedule {
@@ -33,6 +46,7 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    
     p {
         color: var(--primary_text_color);
         margin: 0;
@@ -41,6 +55,7 @@
 .credentials {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 .copyright {
     margin: 15px;
@@ -52,7 +67,8 @@
     }
 }
 .policies {
-    margin: 15px;
+    display: flex;
+    flex-direction: row;
     a {
         text-decoration: none;
         color: var(--policies_text_color);
@@ -64,5 +80,11 @@
     }
     a:hover {
         cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .policies, .credentials {
+        flex-direction: column;
     }
 }

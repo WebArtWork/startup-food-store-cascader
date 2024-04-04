@@ -26,10 +26,23 @@
 	
 	<style>
 		:root {
+			/* FONT SIZE */
+			--fs_title: {{{variables.fs_title || "50px"}}};
+			--fs_small: {{{variables.fs_small || "16px"}}};
+			--fs_medium: {{{variables.fs_medium || "24px"}}};
+			--fs_large: {{{variables.fs_large || "32px"}}};
+			/* COLORS */
+			--bg_color: {{{variables.bg_color || "#111111"}}};
 			--primary_color: {{{variables.primary_color || "#d3c9b7"}}};
-			--secondary_color: {{{variables.secondary_color || "#f2f1ed"}}};
-			--primary_text_color: {{{variables.primary_text_color || "#000000"}}};
-			--secondary_text_color: {{{variables.secondary_text_color || "#FFFFFF"}}};
+			--secondary_color: {{{variables.secondary_color || "#ff9f2f"}}};
+			--primary_text_color: {{{variables.primary_text_color || "#FFFFFF"}}};
+			--secondary_text_color: {{{variables.secondary_text_color || "#ff9f2f"}}};
+			--index_page_secondary_bg_color: {{{variables.index_page_secondary_bg_color || "#353535"}}};
+			--foodcard_bg_color: {{{variables.foodcard_bg_color || "#222222"}}};
+			--foodcard_hover_color: {{{variables.foodcard_hover_color || "#6e6e6e"}}};
+			--discount_foodcard_canceled_text_color: {{{variables.discount_foodcard_canceled_text_color || "#222222"}}};
+			--review_card_bg_color: {{{variables.review_card_bg_color || "#222222"}}};
+			--policies_text_color: {{{variables.policies_text_color || "#444444"}}};
 		}
 	</style>
 	<link rel="stylesheet" href="/cascader/css/index.css">
@@ -103,39 +116,17 @@
 				<div class="footer-main-p1">
 					<div class="contacts">
 						<p>Контактні дані</p>
-						<p>Старе місто, Kam'yanets'-Podil's'kyi, Khmelnytskyi Oblast, Ukraine</p>
+						<p>{{{variables.contacts}}}</p>
 					</div>
 					<div class="worktime">
 						<p>Робочий час</p>
 						<div class="worktime-schedule">
+							{% for worktime in variables.worktime %}
 							<div class="worktime-schedule-flex">
-								<p>Понеділок</p>
-								<p>08:00 - 23:00</p>
+								<p>{{{worktime.day}}}</p>
+								<p>{{{worktime.time}}}</p>
 							</div>
-							<div class="worktime-schedule-flex">
-								<p>Вівторок</p>
-								<p>08:00 - 23:00</p>
-							</div>
-							<div class="worktime-schedule-flex">
-								<p>Середа</p>
-								<p>08:00 - 23:00</p>
-							</div>
-							<div class="worktime-schedule-flex">
-								<p>Четвер</p>
-								<p>08:00 - 23:00</p>
-							</div>
-							<div class="worktime-schedule-flex">
-								<p>П'ятниця</p>
-								<p>08:00 - 23:00</p>
-							</div>
-							<div class="worktime-schedule-flex">
-								<p>Субота</p>
-								<p>08:00 - 23:00</p>
-							</div>
-							<div class="worktime-schedule-flex">
-								<p>Неділя</p>
-								<p>08:00 - 23:00</p>
-							</div>
+							{% endfor %}
 						</div>
 					</div>
 				</div>
@@ -143,7 +134,7 @@
 					<p>На карті</p>
 					<div class="footer-main-p2-map">
 						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1207.9587125659868!2d26.570781740817633!3d48.6753358738442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4733b873f87ab577%3A0x82ac3b42e4f75137!2z0JrQsNC80LXQvdC10YYt0J_QvtC00L7Qu9GM0YHQutC40LksINCl0LzQtdC70YzQvdC40YbQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1710237573338!5m2!1sru!2sua"
+							src="{{{variables.google_maps_embeded}}}"
 							width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"
 							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
@@ -158,7 +149,7 @@
 		<div class="credentials">
 			<div class="copyright">
 				<i class="bi bi-c-circle"></i>
-				<p>2024 COOKIE</p>
+				<p>{{{variables.copyright}}}</p>
 			</div>
 			<div class="policies">
 				<a href="#">Політика використання файлів cookie</a>

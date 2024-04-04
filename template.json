@@ -8,11 +8,63 @@
   "scss": "scss/index.scss",
   "currency": "UAH",
   "variables": {
+    "fs_large": "32px",
+    "fs_medium": "24px",
+    "fs_small": "16px",
+    "fs_title": "50px",
+    "bg_color": "#111111",
     "primary_color": "#d3c9b7",
-    "secondary_color": "#f2f1ed",
-    "primary_text_color": "#000000",
-    "secondary_text_color": "#FFFFFF",
-    "wifi": "12345678"
+    "secondary_color": "#ff9f2f",
+    "primary_text_color": "#FFFFFF",
+    "secondary_text_color": "#ff9f2f",
+    "foodcard_bg_color": "#222222",
+    "foodcard_hover_color": "#6e6e6e",
+    "discount_foodcard_canceled_text_color": "#5f5f5f",
+    "index_page_primary_bg_color": "#353535",
+    "index_page_secondary_bg_color": "#353535",
+    "review_card_bg_color": "#222222",
+    "policies_text_color": "#444444",
+    "contacts": "Старе місто, Kam'yanets'-Podil's'kyi, Khmelnytskyi Oblast, Ukraine",
+    "worktime": [
+      {
+        "id": "/worktime",
+        "day": "Понеділок",
+        "time": "08:00 - 23:00"
+      },
+      {
+        "id": "/worktime",
+        "day": "Вівторок",
+        "time": "08:00 - 23:00"
+      },
+      {
+        "id": "/worktime",
+        "day": "Середа",
+        "time": "08:00 - 23:00"
+      },
+      {
+        "id": "/worktime",
+        "day": "Четвер",
+        "time": "08:00 - 23:00"
+      },
+      {
+        "id": "/worktime",
+        "day": "П'ятниця",
+        "time": "08:00 - 23:00"
+      },
+      {
+        "id": "/worktime",
+        "day": "Субота",
+        "time": "08:00 - 23:00"
+      },
+      {
+        "id": "/worktime",
+        "day": "Неділя",
+        "time": "08:00 - 23:00"
+      }
+    ],
+    "wifi": "12345678",
+    "google_maps_embeded": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1207.9587125659868!2d26.570781740817633!3d48.6753358738442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4733b873f87ab577%3A0x82ac3b42e4f75137!2z0JrQsNC80LXQvdC10YYt0J_QvtC00L7Qu9GM0YHQutC40LksINCl0LzQtdC70YzQvdC40YbQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1710237573338!5m2!1sru!2sua",
+    "copyright": "2024 COOKIE"
   },
   "store": {
     "name": "Store Name",

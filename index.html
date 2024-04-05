@@ -133,12 +133,13 @@
 					<p>На карті</p>
 					<div class="footer-main-p2-map">
 						<iframe
+							id="iframe_embeded"
 							src="{{{variables.google_maps_embeded}}}"
 							style="border:0;" allowfullscreen="" loading="lazy"
 							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 					<button type="button" class="btn btn-outline-light header-btns-btn3">
-						<i class="bi bi-geo-alt"></i>
+						<i class="bi bi-geo-alt"></i><a id="redirect_to_location" href="{{{variables.location_url}}}"></a>
 						Отримати розташування
 					</button>
 				</div>

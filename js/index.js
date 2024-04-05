@@ -1,6 +1,16 @@
 const elementHeight = document.querySelector('header').offsetHeight;
 document.documentElement.style.setProperty('--dynamic-height', `${elementHeight}px`);
 
+const button = document.getElementById('redirect_to_location');
+button.parentNode.addEventListener('click', function() {
+  const destinationURL = button.getAttribute('href');
+  console.log(destinationURL);
+
+  window.location.href = destinationURL;
+});
+
+
+
 document.querySelectorAll('.nav-item').forEach(tab => {
   tab.addEventListener('click', function() {
     const targetText = this.textContent.trim();

@@ -24,10 +24,11 @@
 		<div class="card-wrapper">
 			{% for product in tag.products %}
 			<div class="card" style="width: 18rem;">
-				<img src="{{{ product.thumb }}}" class="card-img-top" alt="{{{ product.name }}}">
+				<img src="{{{ product.thumb }}}" class="card-img-top" onerror="this.style.display='none'" alt="{{{ product.name }}}">
 				<div class="card-body">
 					<div class="card-text">
-						<p class="card-text-name">{{{ product.short }}}</p>
+						<p class="card-text-name">{{{ product.name }}}</p>
+						<p class="card-text-weight">Вага: {{{ product.weight }}}</p>
 						<p class="card-text-price">{{{ product.price }}} {{{ currency }}}</p>
 					</div>
 				</div>

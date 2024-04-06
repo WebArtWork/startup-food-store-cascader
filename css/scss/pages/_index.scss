@@ -39,6 +39,9 @@
                 color: var(--secondary_color);
             }
         }
+        .card-img-top {
+            height: 50%;
+        }
         :nth-child(2) {
             display: flex;
         }

@@ -55,6 +55,16 @@
 	<header>
 		<section>
 			<header class="header">
+				<div class="header-dropdown-wrapper">
+					<div class="header-dropdown">
+						<div class="header-dropdown-opt-wrapper">
+							<div class="header-dropdown-searchbar">
+								<input class="search-input" type="text" placeholder="Search">
+							</div>
+						</div>				
+						<div class="header-dropdown-exit-btn"><i class="bi bi-x-lg"></i></div>
+					</div>
+				</div>
 				<div class="header-f1 container">
 					<a class="header-logo" href="#">
 						<img class="header-logo-img" src="cascader/img/favicon.ico" width="48px" height="48px"></img>
@@ -68,7 +78,7 @@
 								class="bi bi-search"></i>Пошук</button>
 						<button type="button" class="btn btn-outline-light header-btns-btn2"><i
 								class="bi bi-person-circle"></i></button>
-						<button type="button" class="btn btn-outline-light header-btns-btn32"><i class="bi bi-list"></i></button>					
+						<button type="button" class="btn btn-outline-light header-btns-btn3"><i class="bi bi-list"></i></button>					
 					</div>
 				</div>
 				<div class="header-f2 container">
@@ -152,9 +162,9 @@
 				<p>{{{variables.copyright}}}</p>
 			</div>
 			<div class="policies">
-				<a href="#">Політика використання файлів cookie</a>
-				<a href="#">Умови користування</a>
-				<a href="#">Політика конфіденційності</a>
+				<a href="{{{variables.usage_policy}}}">Політика використання файлів cookie</a>
+				<a href="{{{variables.terms_of_use}}}">Умови користування</a>
+				<a href="{{{variables.privacy_policy}}}">Політика конфіденційності</a>
 			</div>
 		</div>
 

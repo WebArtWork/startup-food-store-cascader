@@ -1,5 +1,5 @@
 <div class="header-f4-wrapper">
-	<div class="header-f4">
+	<div class="header-f4 container">
 		<div class="header-f4-scrollable">
 			<ul class="nav nav-underline">
 				{% for tag in tags %}
@@ -15,28 +15,32 @@
 		<div class="vline"></div>
 	</div>
 </div>
-<section class="main">
-	{% for tag in tags %}
-	{% if tag.products and tag.products | length %}
-	<div class="products-category">{{{ tag.name }}}</div>
-	<div class="card-wrapper">
-		{% for product in tag.products %}
-		<div class="card" style="width: 18rem;">
-			<img src="{{{ product.thumb }}}" class="card-img-top" alt="{{{ product.name }}}">
-			<div class="card-body">
-				<div class="card-text">
-					<p class="card-text-name">{{{ product.short }}}</p>
-					<p class="card-text-price">{{{ product.price }}} {{{ currency }}}</p>
+<section class="main container">
+	<div class="cards-wrapper">
+		<div class="cards">
+		{% for tag in tags %}
+		{% if tag.products and tag.products | length %}
+		<div class="products-category" id="{{{tag.name}}}">{{{ tag.name }}}</div>
+		<div class="card-wrapper">
+			{% for product in tag.products %}
+			<div class="card" style="width: 18rem;">
+				<img src="{{{ product.thumb }}}" class="card-img-top" alt="{{{ product.name }}}">
+				<div class="card-body">
+					<div class="card-text">
+						<p class="card-text-name">{{{ product.short }}}</p>
+						<p class="card-text-price">{{{ product.price }}} {{{ currency }}}</p>
+					</div>
 				</div>
 			</div>
+			{% endfor %}
 		</div>
+		{% endif %}
 		{% endfor %}
+		<div class="anth_sections">
+			<p>Інші секції:</p>
+			<button type="button" class="btn btn-outline-light header-btns-btn2">Бар</button>
+			<button type="button" class="btn btn-outline-light header-btns-btn2">Сніданки</button>
+		</div>
 	</div>
-	{% endif %}
-	{% endfor %}
-	<div class="anth_sections">
-		<p>Інші секції:</p>
-		<button type="button" class="btn btn-outline-light header-btns-btn2">Бар</button>
-		<button type="button" class="btn btn-outline-light header-btns-btn2">Сніданки</button>
 	</div>
 </section>

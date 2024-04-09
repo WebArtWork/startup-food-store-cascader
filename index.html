@@ -55,7 +55,7 @@
 	<header>
 		<section>
 			<header class="header">
-				<div class="header-f1">
+				<div class="header-f1 container">
 					<a class="header-logo" href="#">
 						<img class="header-logo-img" src="cascader/img/favicon.ico" width="48px" height="48px"></img>
 						<div class="header-logo-name">
@@ -68,11 +68,10 @@
 								class="bi bi-search"></i>Пошук</button>
 						<button type="button" class="btn btn-outline-light header-btns-btn2"><i
 								class="bi bi-person-circle"></i></button>
-						<button type="button" class="btn btn-outline-light header-btns-btn3"><i
-								class="bi bi-list"></i></button>
+						<button type="button" class="btn btn-outline-light header-btns-btn32"><i class="bi bi-list"></i></button>					
 					</div>
 				</div>
-				<div class="header-f2">
+				<div class="header-f2 container">
 					<ul class="nav nav-underline">
 						<li class="nav-item">
 							<a class="nav-link" href="/">Головна</a>
@@ -86,7 +85,7 @@
 					</ul>
 				</div>
 				<div class="header-f3-wrapper">
-					<div class="header-f3">
+					<div class="header-f3 container">
 						<ul class="nav nav-underline">
 							<li class="nav-item">
 								<a class="nav-link">Кухня</a>
@@ -111,7 +110,7 @@
 	</section>
 	<footer>
 		<div class="vline"></div>
-		<div class="footer-main">
+		<div class="footer-main container">
 			<div class="footer-main-container">
 				<div class="footer-main-p1">
 					<div class="contacts">
@@ -134,19 +133,20 @@
 					<p>На карті</p>
 					<div class="footer-main-p2-map">
 						<iframe
+							id="iframe_embeded"
 							src="{{{variables.google_maps_embeded}}}"
-							width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+							style="border:0;" allowfullscreen="" loading="lazy"
 							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 					<button type="button" class="btn btn-outline-light header-btns-btn3">
-						<i class="bi bi-geo-alt"></i>
+						<i class="bi bi-geo-alt"></i><a id="redirect_to_location" href="{{{variables.location_url}}}"></a>
 						Отримати розташування
 					</button>
 				</div>
 			</div>
 		</div>
 		<div class="vline"></div>
-		<div class="credentials">
+		<div class="credentials container">
 			<div class="copyright">
 				<i class="bi bi-c-circle"></i>
 				<p>{{{variables.copyright}}}</p>

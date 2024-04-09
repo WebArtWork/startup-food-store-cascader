@@ -63,6 +63,7 @@
       }
     ],
     "wifi": "12345678",
+    "location_url": "https://maps.app.goo.gl/ZoG9oP4aDQbjDKSr6",
     "google_maps_embeded": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1207.9587125659868!2d26.570781740817633!3d48.6753358738442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4733b873f87ab577%3A0x82ac3b42e4f75137!2z0JrQsNC80LXQvdC10YYt0J_QvtC00L7Qu9GM0YHQutC40LksINCl0LzQtdC70YzQvdC40YbQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1710237573338!5m2!1sru!2sua",
     "copyright": "2024 COOKIE"
   },

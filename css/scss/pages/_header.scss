@@ -14,13 +14,21 @@ header {
     .nav {
         --bs-nav-link-color: var(--primary_text_color);
         --bs-nav-link-hover-color: var(--secondary_color) !important;
+        
     }
 }
 .nav {
     --bs-nav-link-color: var(--primary_text_color);
     --bs-nav-link-hover-color: var(--primary_text_color);
 }
+
+.header-f4-items {
+    justify-content: space-around;
+}
+
 .nav-underline .nav-link.active {
+    justify-content: center;
+    flex: 1;
     --bs-nav-underline-link-active-color: var(--primary_text_color);
     color: var(secondary_color);
 }
@@ -206,6 +214,13 @@ p {
     color: var(--primary_text_color);
     font-size: var(--fs_medium);
     margin-right: 15px;
+    & i {
+        transition: all 0.2s ease;
+    }
+    & i:hover {
+        color: var(--primary_color);
+        transform: scale(120%);
+    }
 }
 .search-input {
     width: 90%;

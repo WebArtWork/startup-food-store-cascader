@@ -24,6 +24,12 @@
             .card-text-price {
                 color: var(--secondary_color);
             }
+            .card-text-name {
+                font-size: var(--fs_medium);
+            }
+        }
+        .card-img-top {
+            height: 50%;
         }
         :nth-child(2) {
             display: flex;

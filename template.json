@@ -25,6 +25,9 @@
     "review_card_bg_color": "#222222",
     "policies_text_color": "#444444",
     "contacts": "Старе місто, Kam'yanets'-Podil's'kyi, Khmelnytskyi Oblast, Ukraine",
+    "usage_policy": "#",
+    "terms_of_use": "#",
+    "privacy_policy": "#",
     "worktime": [
       {
         "id": "/worktime",

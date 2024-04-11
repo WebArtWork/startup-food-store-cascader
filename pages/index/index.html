@@ -8,7 +8,8 @@
 					<img src="{{{ product.thumb }}}" class="card-img-top" alt="{{{ product.name }}}">
 					<div class="index-card-body card-body">
 						<div class="index-card-text card-text">
-							<p class="index-card-text-name card-text-name">{{{ product.short }}}</p>
+							<p class="index-card-text-name card-text-name">{{{ product.name }}}</p>
+							<p class="index-card-text-weight card-text-weight">{{{ product.weight }}}</p>
 							<p class="index-card-text-price card-text-price">{{{ product.price }}} {{{ currency }}}
 							</p>
 						</div>
@@ -40,7 +41,8 @@
 							<img src="{{{ top_products[0].thumb }}}" class="card-img-top" alt="{{{ product.name }}}">
 							<div class="index-card-body card-body">
 								<div class="index-card-text card-text">
-									<p class="index-card-text-name card-text-name">{{{ top_products[0].short }}}</p>
+									<p class="index-card-text-name card-text-name">{{{ top_products[0].name }}}</p>
+									<p class="index-card-text-weight card-text-weight">{{{ top_products[0].weight }}}</p>
 									<div class="price-discount">
 										<p class="index-card-text-price card-text-price">{{{ top_products[0].price }}}
 											{{{currency }}}</p>

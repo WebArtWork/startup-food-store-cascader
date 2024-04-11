@@ -1,5 +1,29 @@
 const elementHeight = document.querySelector('header').offsetHeight;
 document.documentElement.style.setProperty('--dynamic-height', `${elementHeight}px`);
+const dropdown_menu = document.querySelector('.header-dropdown');
+dropdown_menu.style.top = "-100px";
+
+const button_dropdown = document.querySelector('.header-btns-btn3');
+const search_button = document.querySelector('.header-btns-btn1');
+const button_dropdown_exit = document.querySelector('.header-dropdown-exit-btn');
+
+button_dropdown_exit.addEventListener('click', () => {
+  dropdown_menu.style.top = "-100px";
+});
+search_button.addEventListener('click', () => {
+  dropdown_menu.style.top = "0px";
+});
+
+
+button_dropdown.addEventListener('click', () => {
+  if (dropdown_menu.style.top === "-100px") {
+    dropdown_menu.style.top = "0px";
+  } else if (dropdown_menu.style.top === "0px") {
+    dropdown_menu.style.top = "-100px";
+  }
+});
+
+
 
 const button = document.getElementById('redirect_to_location');
 button.parentNode.addEventListener('click', function() {

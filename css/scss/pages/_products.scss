@@ -18,6 +18,8 @@
         margin: 10px;
         --bs-card-border-color: var(--review_card_bg_color);
         background-color: var(--review_card_bg_color);
+        overflow: hidden;
+        transition: all .2s ease;
         .card-body {
             display: flex;
             flex-direction: column;
@@ -34,9 +36,26 @@
         :nth-child(2) {
             display: flex;
         }
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 16px rgb(34, 34, 34);
+        }
     }
 }
 .anth_sections {
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+.favourite_button {
+    border-radius: 0 0 var(--bs-border-radius) var(--bs-border-radius);
+    text-align: center;
+    padding: 8px;
+    background-color: var(--foodcard_bg_color);
+    font-size: var(--fs_small);
+    top: -40px;
+    right: 10px;
+    position: absolute;
+    color: white;
+    transition: all .2s ease-out;
 }
